@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2017-10-07T20:44:23Z" name="Suite1" finished-at="2017-10-07T20:44:23Z" duration-ms="61">
+  <suite started-at="2017-10-15T06:35:11Z" name="Suite1" finished-at="2017-10-15T06:35:11Z" duration-ms="79">
     <groups>
     </groups>
-    <test started-at="2017-10-07T20:44:23Z" name="Nopackage" finished-at="2017-10-07T20:44:23Z" duration-ms="3">
-    </test> <!-- Nopackage -->
-    <test started-at="2017-10-07T20:44:23Z" name="Regression1" finished-at="2017-10-07T20:44:23Z" duration-ms="1">
-    </test> <!-- Regression1 -->
+    <test started-at="2017-10-15T06:35:11Z" name="test1" finished-at="2017-10-15T06:35:11Z" duration-ms="3">
+    </test> <!-- test1 -->
+    <test started-at="2017-10-15T06:35:11Z" name="test2" finished-at="2017-10-15T06:35:11Z" duration-ms="1">
+    </test> <!-- test2 -->
   </suite> <!-- Suite1 -->
 </testng-results>

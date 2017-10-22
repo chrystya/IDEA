@@ -113,10 +113,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test name=&quot;Nopackage&quot;&gt;
-  &lt;/test&gt; &lt;!-- Nopackage --&gt;
-  &lt;test name=&quot;Regression1&quot;&gt;
-  &lt;/test&gt; &lt;!-- Regression1 --&gt;
+  &lt;test name=&quot;test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;parameters.ChromeBrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test1 --&gt;
+  &lt;test name=&quot;test2&quot;&gt;
+  &lt;/test&gt; &lt;!-- test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -128,10 +131,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Nopackage (0 classes)</span>
+                <span class="test-name">test1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Regression1 (0 classes)</span>
+                <span class="test-name">test2 (0 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
