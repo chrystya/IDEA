@@ -65,7 +65,10 @@ public class LoginPage {
         this.clickLogin();
 
 
+    }
 
+    public void close() {
+        driver.quit();
     }
 
 }
