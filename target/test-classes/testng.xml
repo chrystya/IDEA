@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="test1" >
         <classes>
-            <class name="tests.Correlation_parameters"/>
+            <class name="tests.Correlation_parameters_test"/>
         </classes>
 
     </test>

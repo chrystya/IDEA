@@ -39,7 +39,4 @@ public class AssessmentsSelectionPage {
         driver.findElement(math).click();
     }
 
-
-
-
 }

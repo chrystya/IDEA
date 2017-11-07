@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class ParametersSectionCorrelation {
+public class Correlation_page {
 
     WebDriver driver;
 
@@ -23,11 +23,12 @@ public class ParametersSectionCorrelation {
     By period2Dropdown = By.cssSelector("rpt-dropdown-95");
 
     By viewReportBtn = By.cssSelector("button[bo-attr-auto-button='view-report']");
+    By totalStudentsLabel = By.cssSelector(".students-info.ng-binding");
 
 
 //Constructor
 
-    public ParametersSectionCorrelation(WebDriver driver) {
+    public Correlation_page(WebDriver driver) {
         this.driver = driver;
 
     }
@@ -35,7 +36,13 @@ public class ParametersSectionCorrelation {
     public void clickViewReportBtn() {
         driver.findElement(viewReportBtn).click();
     }
+
+    public String getStudentsNumber() {
+        return driver.findElement(totalStudentsLabel).getText();
+    }
 }
+
+
 
 
 

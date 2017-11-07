@@ -2,7 +2,6 @@ package tests;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 // Import package pageObject.*
@@ -12,14 +11,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.AssessmentsSelectionPage;
 import pageObjects.LoginPage;
-import pageObjects.ParametersSectionCorrelation;
+import pageObjects.Correlation_page;
+import org.testng.Assert;
 
-public class Correlation_parameters {
+
+public class Correlation_parameters_test {
 
   WebDriver driver;
   LoginPage objLogin;
   AssessmentsSelectionPage objAssessment;
-  ParametersSectionCorrelation objCorrelationParam;
+  Correlation_page objCorrelationPage;
 
 
   @BeforeTest
@@ -32,7 +33,7 @@ public class Correlation_parameters {
     driver = new ChromeDriver();
     objLogin = new LoginPage(driver);
     objAssessment = new AssessmentsSelectionPage(driver);
-    objCorrelationParam = new ParametersSectionCorrelation(driver);
+    objCorrelationPage = new Correlation_page(driver);
     driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     driver.get("https://mclasshome.aws.wgen.net/reports/Correlation");
   }
@@ -45,7 +46,10 @@ public class Correlation_parameters {
     objLogin.loginToCI("muser47", "Abcd1234");
     objAssessment.selectDNext();
     Thread.sleep(5000);
-    objCorrelationParam.clickViewReportBtn();
+    objCorrelationPage.clickViewReportBtn();
+    Thread.sleep(5000);
+    objCorrelationPage.getStudentsNumber();
+    Assert.assertEquals(objCorrelationPage.getStudentsNumber(), "5 students with results in measures");
 
 
   }
