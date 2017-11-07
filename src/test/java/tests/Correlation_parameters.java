@@ -39,13 +39,13 @@ public class Correlation_parameters {
 
   @Test
 
-  public void test_Verify_Correlation_Parameters() {
+  public void test_Verify_Correlation_Parameters() throws InterruptedException {
 
     //System.out.println("Test");
     objLogin.loginToCI("muser47", "Abcd1234");
     objAssessment.selectDNext();
-    objCorrelationParam.openMeasure1dropdown();
-    objCorrelationParam.selectPSF();
+    Thread.sleep(5000);
+    objCorrelationParam.clickViewReportBtn();
 
 
   }
